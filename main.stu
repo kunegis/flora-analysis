@@ -7,7 +7,7 @@ bin/$name:  $[CXXFLAGS] -p bin/ [dep/bin.$name]
 	g++-12 -std=c++23 cc/$name.cc -o bin/$name $CXXFLAGS
 }
 
-html/all.html:  bin/all -p html
+html/all.html:  bin/all -p html flora/Flora
 {
 	bin/all
 }
@@ -22,6 +22,9 @@ html/ { mkdir -p html ; }
 }
 
 stu-utils/$name: -p stu-utils;
+flora/Flora:  -p flora;
 
-# Symlink to the stu-utils Git repo
+# Symlink to directories outside this project
 stu-utils;
+flora;
+

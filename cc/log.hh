@@ -10,7 +10,7 @@
 #include <fstream>
 
 /*
- * The content of the file 'Flora'.
+ * The content of the file "flora/Flora".
  */
 class Log
 {
@@ -23,7 +23,7 @@ public:
 
 Log::Log()
 {
-	std::ifstream i("../Flora");
+	std::ifstream i("flora/Flora");
 
 	unsigned id_next_wish= 1;
 	
