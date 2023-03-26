@@ -22,3 +22,6 @@ html/ { mkdir -p html ; }
 }
 
 stu-utils/$name: -p stu-utils;
+
+# Symlink to the stu-utils Git repo
+stu-utils;
