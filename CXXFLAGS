@@ -1,0 +1,1 @@
+-pg -Werror -Wall -Wextra -ggdb -O0 -Wpedantic

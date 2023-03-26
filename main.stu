@@ -1,0 +1,24 @@
+% version 2.7
+
+@main:  html/all.html;
+
+bin/$name:  $[CXXFLAGS] -p bin/ [dep/bin.$name]
+{
+	g++-12 -std=c++23 cc/$name.cc -o bin/$name $CXXFLAGS
+}
+
+html/all.html:  bin/all -p html
+{
+	bin/all
+}
+
+bin/  { mkdir -p bin  ; }
+dep/  { mkdir -p dep  ; }
+html/ { mkdir -p html ; }
+
+>dep/bin.$name: -p dep/ stu-utils/depc ./ cc
+{
+	stu-utils/depc cc/$name.cc
+}
+
+stu-utils/$name: -p stu-utils;
