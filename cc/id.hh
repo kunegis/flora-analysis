@@ -11,7 +11,7 @@
 
 /* 
  * The ID of a plant.  Stored as a right-aligned char array.  Unused chars are
- * '\0'.  
+ * ' '.  
  */
 class Id
 {
@@ -43,6 +43,6 @@ public:
 	}
 };
 
-constexpr Id id_with{"W"};
+constexpr Id id_wish{"W"};
 
 #endif /* ! ID_HH */
