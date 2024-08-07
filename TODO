@@ -1,0 +1,7 @@
+* automatize creation of the tree (chart)
+** fix compilation bugs 
+*** Install g++-13:  Wait for an Ubuntu update (24.04 LTS) (or use Linux Mint?)
+** make sure all W-plants are included
+** include statistics about which plant has how many pictures by parsing tags from the photo collection
+** Add sections to Dendrobium
+** Make time plot of number of plants over time (both clones and pots)
